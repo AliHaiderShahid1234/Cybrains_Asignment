@@ -17,6 +17,10 @@ def LoginPage():
 @app.route('/dashboard')
 def Dashboard():
     return render_template('dashboard.html')
+
+@app.route('/contact')
+def Contact():
+    return render_template("base.html", title="Contact Us", content="<h1>Contact Us</h1><p>Contact page coming soon.</p>")
     
 if __name__ == "__main__":
     app.run()
